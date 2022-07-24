@@ -1,8 +1,19 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header({userName}){
     return (
         <>
+            <Link href="/">
+                <a>
+                    <Image
+                        src={"/img/copa-mundial.png"}
+                        height={120}
+                        width={120}
+                        alt="Copa Mundial"
+                    />
+                </a>
+            </Link>
             <nav className = "principal-menu">
                 <ul>
                     <li>
@@ -34,9 +45,9 @@ export default function Header({userName}){
                     </Link>
                     </li>
                     <li>
-                    <Link href="/posicion-jugadores">
+                    <Link href="/posicion-participantes">
                         <a>
-                        Posiciones de jugadores
+                        Posiciones de participantes
                         </a>
                     </Link>
                     </li>
@@ -50,11 +61,9 @@ export default function Header({userName}){
                 </ul>
             </nav>
 
-            <nav>
-                <div className="userLogin"> 
-                    Bienvenido(a) {userName}
-                </div>
-            </nav>
+            <div className="userLogin"> 
+                Bienvenido(a) {userName}
+            </div>
         </>
     )
 }

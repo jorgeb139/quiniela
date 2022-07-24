@@ -1,13 +1,9 @@
+import MainLayout from '../../components/MainLayout'
+
 export default function Faqs(){
     return (
-        <>
-            <h1>Preguntas y respuestas</h1>
-
-            <style jsx> {`
-                h1 {
-                    font-size: 25px
-                }
-            `} </style>
-        </>
+        <MainLayout title="Preguntas Frecuentes | Quiniela Mundial" description="Calendario de partidos del mundial">
+            <h1>Preguntas frecuentes</h1>
+        </MainLayout>
     )
 }
