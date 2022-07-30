@@ -24,7 +24,7 @@ export default function MainLayout ({children, title, description,}) {
                 <Footer/>
             </footer>
 
-            <style jsx>{`
+            <style jsx global>{`
                 html, body {
                     background-image:
                         radial-gradient(${colors.primary}, 1px, transparent 1px),
@@ -38,7 +38,6 @@ export default function MainLayout ({children, title, description,}) {
 
                 main {
                     font-family: ${fonts.base};
-                    height: 100vh;
                     padding: 4rem 0;
                     flex: 1;
                     display: flex;

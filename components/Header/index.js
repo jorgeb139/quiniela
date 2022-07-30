@@ -64,6 +64,12 @@ export default function Header({userName}){
             <div className="userLogin"> 
                 Bienvenido(a) {userName}
             </div>
+
+            <style jsx global>{`
+
+
+            `}</style>
+
         </>
     )
 }
