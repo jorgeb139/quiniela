@@ -65,8 +65,10 @@ export default function Header({userName}){
                 Bienvenido(a) {userName}
             </div>
 
-            <style jsx global>{`
-
+            <style jsx>{`
+                .userLogin {
+                    font-weight: 500;
+                }
 
             `}</style>
 
