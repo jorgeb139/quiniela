@@ -1,39 +1,40 @@
-import styles, {globalStyles} from './styles';
+import styles, { globalStyles } from "./styles"
 
-import Head from 'next/head'
-import Header from '../Header/index'
-import Footer from '../Footer/index'
+import Head from "next/head"
+// import Header from "../Header/index"
+// import Footer from "../Footer/index"
 
-export default function MainLayout ({children, title, description,}) {
-    return (
-        <>
-            <div>
-                <Head>
-                    <title>{title}</title>
-                    <meta name="description" content={description} />
-                    <link rel="icon" href="/img/copa-mundial.png" />
-                </Head>
+export default function MainLayout({ children, title, description }) {
+  return (
+    <>
+      <div>
+        <Head>
+          <title>{title}</title>
+          <meta name="description" content={description} />
+          <link rel="icon" href="/img/copa-mundial.png" />
+        </Head>
 
-                {/* <header>
+        {/* <header>
                     <Header userName = 'Jorge Burguera'/>
                 </header> */}
 
-                <main>
-                    {children}
-                </main>
+        <main>{children}</main>
 
-                {/* <footer>
+        {/* <footer>
                     <Footer/>
                 </footer> */}
-            </div>
+      </div>
 
-            <style jsx>{styles}</style>
-            <style jsx global>{globalStyles}</style>
-        </>
-    )
+      <style jsx>{styles}</style>
+      <style jsx global>
+        {globalStyles}
+      </style>
+    </>
+  )
 }
 
 MainLayout.defaultProps = {
-    title: "Quiniela Mundial",
-    description: "Quiniela Mundial es una aplicación que permite jugar a la quiniela de una manera fácil y rápida."
+  title: "Quiniela Mundial",
+  description:
+    "Quiniela Mundial es una aplicación que permite jugar a la quiniela de una manera fácil y rápida.",
 }

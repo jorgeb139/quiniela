@@ -1,4 +1,4 @@
-import styles from "../../styles/Global.module.css";
+import styles from "../../styles/Global.module.css"
 
 export default function Footer({ userName }) {
   return (
@@ -8,5 +8,5 @@ export default function Footer({ userName }) {
         {new Date().getFullYear()}
       </div>
     </>
-  );
+  )
 }
