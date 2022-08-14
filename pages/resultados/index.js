@@ -1,6 +1,5 @@
 // import useSWR from "swr"
 import MainLayout from "../../components/MainLayout"
-
 export default function Resultados({ response }) {
   return (
     <MainLayout

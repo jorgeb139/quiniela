@@ -15,14 +15,16 @@ export default function MainLayout({ children, title, description }) {
         </Head>
 
         {/* <header>
-                    <Header userName = 'Jorge Burguera'/>
-                </header> */}
+            <Header userName = 'Jorge Burguera'/>
+        </header> */}
 
-        <main>{children}</main>
+        {/* <main>
+          </main> */}
+        {children}
 
         {/* <footer>
-                    <Footer/>
-                </footer> */}
+            <Footer/>
+        </footer> */}
       </div>
 
       <style jsx>{styles}</style>

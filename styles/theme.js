@@ -7,10 +7,12 @@ export const fonts = {
 }
 
 export const colors = {
-  primary: "#FF9900",
-  primaryOpposite: "#0091FF",
-  secondary: "#E8710C",
-  secondaryOpposite: "#0093B3",
-  black: "#000000",
-  white: "#FFFFFF",
+  primary: "#56042C",
+  prymaryLight: "#AA224D",
+  prymaryDark: "#2B1520",
+  deepBlue: "#1077C3",
+  lightBlue: "#49BCE3",
+  yellow: "FEC310",
+  black: "#171717",
+  white: "#e6e6e6",
 }

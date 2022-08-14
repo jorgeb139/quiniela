@@ -3,10 +3,10 @@ import { useState, useEffect } from "react"
 
 import MainLayout from "../components/MainLayout"
 import Button from "../components/Button"
-import { colors } from "../styles/theme"
+// import { colors } from "../styles/theme"
 import GoogleLogo from "../components/Icons/Google"
 import FacebookLogo from "../components/Icons/Facebook"
-import TwitterLogo from "../components/Icons/Twitter"
+// import TwitterLogo from "../components/Icons/Twitter"
 import LoginModal from "../components/LoginModal"
 import {
   loginWithGoogle,
@@ -14,7 +14,6 @@ import {
   loginWithTwitter,
   onAuthStateChange,
 } from "../firebase/client"
-
 export default function Home() {
   // Save the user data in the state
   const [user, setUser] = useState(undefined)
@@ -23,11 +22,6 @@ export default function Home() {
   useEffect(() => {
     onAuthStateChange(setUser)
   }, [])
-
-  const formModal = {
-    email: "",
-    password: "",
-  }
 
   const handleClick = (event, network) => {
     if (network === "Google") {
@@ -65,7 +59,7 @@ export default function Home() {
             }}
           >
             <Image
-              src={"/img/copa-mundial.png"}
+              src={"/img/Qatar2022_blanco.png"}
               height={120}
               width={120}
               alt="Banner hero"
@@ -93,17 +87,18 @@ export default function Home() {
                 <FacebookLogo height="24" width="24" />
                 Facebook
               </Button>
-              <Button
+              {/* <Button
                 id="TwitterButton"
                 onClick={(event) => handleClick(event, "Twitter")}
               >
                 <TwitterLogo height="24" width="24" />
                 Twitter
-              </Button>
-              <Button id="EmailButton">
-                {/* <EmailLogo height="24" width="24"/> */}
-                Correo electrónico
-              </Button>
+              </Button> */}
+              {/* <Button id="EmailButton">
+                <EmailLogo height="24" width="24" />
+                Email
+              </Button> */}
+              <LoginModal />
             </div>
           )}
           {user && (
@@ -116,7 +111,6 @@ export default function Home() {
               </p>
             </div>
           )}
-          <LoginModal formModal={formModal} />
         </section>
       </MainLayout>
 
@@ -133,16 +127,16 @@ export default function Home() {
         }
 
         h1 {
-          color: ${colors.primary};
-          font-weight: 800;
-          margin-bottom: 16px;
-          font-size: 30px;
+          text-align: center;
         }
 
         h2 {
-          color: ${colors.secondary};
-          font-size: 19px;
-          margin: 0;
+          text-align: center;
+        }
+
+        p {
+          margin-top: 30px;
+          text-align: center;
         }
       `}</style>
     </>
