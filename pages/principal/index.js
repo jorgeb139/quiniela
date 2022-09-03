@@ -1,27 +1,27 @@
 // import styles from "../styles/Global.module.css"
 // import Image from "next/image"
 
-import MainLayout from "../components/MainLayout"
+// import MainLayout from "../components/MainLayout"
 
 export default function Home() {
   return (
     <>
-      <MainLayout
+      {/* <MainLayout
         title="Quiniela Mundial"
         description="Encontrarás todas las opciones para disfrutar tu quiniela"
-      >
-        <section>
-          <h1>
-            Bienvenidos a <strong>Quiniela Mundial</strong>
-          </h1>
-          {/* <Image
+      > */}
+      <section>
+        <h1>
+          Bienvenidos a <strong>Quiniela Mundial</strong>
+        </h1>
+        {/* <Image
             src={"/img/placeholder-1920x1080.jpg"}
             height={1920}
             width={1080}
             alt="Banner hero"
           /> */}
-        </section>
-      </MainLayout>
+      </section>
+      {/* </MainLayout> */}
 
       <style jsx>{`
         section {

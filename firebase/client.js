@@ -3,10 +3,12 @@ import { initializeApp } from "firebase/app"
 import {
   getAuth,
   signInWithPopup,
+  signInWithRedirect,
   GoogleAuthProvider,
   FacebookAuthProvider,
   TwitterAuthProvider,
 } from "firebase/auth"
+import { isMobile } from "react-device-detect"
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -26,7 +28,12 @@ const app = initializeApp(firebaseConfig)
 
 // Construct user data oject from Firebase Auth user
 const getUserFromFirebaseAuth = (user) => {
-  const { displayName, email } = user
+  const provider = user.reloadUserInfo.providerUserInfo[0].providerId
+  const { displayName } = user
+  const email =
+    provider === "twitter.com"
+      ? user.reloadUserInfo.providerUserInfo[0].email
+      : user.email
   return {
     displayName,
     email,
@@ -45,20 +52,39 @@ export const onAuthStateChange = (onChange) => {
   })
 }
 
-// Login with Google
 export const loginWithGoogle = () => {
   // Initializing Google provider
   const googleProvider = new GoogleAuthProvider()
 
-  // Using SiginWithPopup to sign in with Google
   const auth = getAuth()
-  return signInWithPopup(auth, googleProvider).then((user) => {
-    const { displayName, email } = user.user
-    return {
-      displayName,
-      email,
+
+  if (isMobile) {
+    // Using signInWithRedirect to sign in with Google on desktop
+    return signInWithRedirect(auth, googleProvider).then((user) => {
+      try {
+        const { displayName, email } = user.user
+        return {
+          displayName,
+          email,
+        }
+      } catch (error) {
+        console.log(error)
+      }
+    })
+  } else {
+    try {
+      // Using signInWithPopup to sign in with Google on mobile
+      return signInWithPopup(auth, googleProvider).then((user) => {
+        const { displayName, email } = user.user
+        return {
+          displayName,
+          email,
+        }
+      })
+    } catch (error) {
+      console.log(error)
     }
-  })
+  }
 }
 
 // Login with Facebook
@@ -72,13 +98,32 @@ export const loginWithFacebook = () => {
 }
 
 // Login with Twitter
-export const loginWithTwitter = () => {
+export const loginWithTwitter = async () => {
   // Initializing Twitter provider
   const twitterProvider = new TwitterAuthProvider()
 
   // Using SiginWithPopup to sign in with Twitter
   const auth = getAuth()
-  return signInWithPopup(auth, twitterProvider)
+
+  signInWithPopup(auth, twitterProvider).catch((error) => {
+    console.log(error.email)
+  })
+  // Using signInWithPopup to sign in with Google on mobile
+  // return signInWithPopup(auth, twitterProvider).then((user) => {
+  //   try {
+  //     const { displayName, email } = user.user
+  //     return {
+  //       displayName,
+  //       email,
+  //     }
+  //   } catch (error) {
+  //     if (error.code === "auth/account-exists-with-different-credential") {
+  //       console.log("El error está acá")
+  //     }
+  //   }
+  // })
+  // return signInWithPopup(auth, twitterProvider)
+
   // .then(getUserFromFirebaseAuth)
 
   // .then((user) => {

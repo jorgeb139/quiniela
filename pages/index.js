@@ -3,11 +3,11 @@ import { useState, useEffect } from "react"
 
 import MainLayout from "../components/MainLayout"
 import Button from "../components/Button"
-// import { colors } from "../styles/theme"
 import GoogleLogo from "../components/Icons/Google"
 import FacebookLogo from "../components/Icons/Facebook"
-// import TwitterLogo from "../components/Icons/Twitter"
+import TwitterLogo from "../components/Icons/Twitter"
 import LoginModal from "../components/LoginModal"
+import LoginRedirect from "../components/LoginRedirect"
 import {
   loginWithGoogle,
   loginWithFacebook,
@@ -87,13 +87,13 @@ export default function Home() {
                 <FacebookLogo height="24" width="24" />
                 Facebook
               </Button>
-              {/* <Button
+              <Button
                 id="TwitterButton"
                 onClick={(event) => handleClick(event, "Twitter")}
               >
                 <TwitterLogo height="24" width="24" />
                 Twitter
-              </Button> */}
+              </Button>
               {/* <Button id="EmailButton">
                 <EmailLogo height="24" width="24" />
                 Email
@@ -109,6 +109,8 @@ export default function Home() {
               <p>
                 Has iniciado sesión con el correo: <strong>{user.email}</strong>
               </p>
+              <p>Redireccionando al panel principal, un momento por favor.</p>
+              <LoginRedirect url="/principal" />
             </div>
           )}
         </section>
