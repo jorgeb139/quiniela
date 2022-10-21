@@ -1,17 +1,23 @@
 import css from "styled-jsx/css"
-import { colors, fonts, breakpoints } from "../../styles/theme"
+import { colors, fonts } from "../../styles/theme"
 
 export const globalStyles = css.global`
   html,
   body {
-    background: linear-gradient(
+    /* background: linear-gradient(
       112deg,
       rgba(170, 34, 77, 1) 0%,
       rgba(43, 21, 32, 1) 100%
-    );
+    ); */
+    background-image: url("/img/bg_main.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
     padding: 0;
+    padding-bottom: 10px;
     margin: 0;
     font-family: ${fonts.base};
+    /* overflow: hidden; */
   }
 
   p {
@@ -31,35 +37,34 @@ export const globalStyles = css.global`
     margin: 0;
   }
 
-  /* * {
-    box-sizing: border-box;
+  /* .principalSection {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   } */
-`
 
-export default css`
-  div {
-    display: grid;
+  /* .principalContainer {
     height: 100vh;
-    place-items: center;
+  } */
+
+  .bgContainer {
+    margin-top: 20px;
+    display: grid;
+    min-height: 86vh;
+    height: 100%;
+    width: 80%;
+    max-width: 1280px;
   }
 
-  /* main {
-    background: rgb(170, 34, 77);
-    background: linear-gradient(
-      112deg,
-      rgba(170, 34, 77, 1) 0%,
-      rgba(43, 21, 32, 1) 100%
-    );
-    border-radius: 10px;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
-    height: 100%;
-    width: 100%;
-  } */
-
-  /* @media (min-width: ${breakpoints.mobile}) {
-    main {
-      height: 90vh;
-      width: ${breakpoints.mobile};
-    }
-  } */
+  .prueba {
+    border-radius: 20px;
+    justify-self: center;
+    top: 0;
+    background: white;
+    opacity: 0.3;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 60vw;
+  }
 `
+
+export default css``

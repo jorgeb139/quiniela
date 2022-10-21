@@ -1,39 +1,46 @@
 import styles, { globalStyles } from "./styles"
 
 import Head from "next/head"
-// import Header from "../Header/index"
-// import Footer from "../Footer/index"
+import PrincipalHeader from "../Header/PrincipalHeader"
+import Grid from "@mui/material/Unstable_Grid2"
 
-export default function MainLayout({ children, title, description }) {
+const MainLayout = ({ children, title, description }) => {
   return (
     <>
-      <div>
-        <Head>
-          <title>{title}</title>
-          <meta name="description" content={description} />
-          <link rel="icon" href="/img/copa-mundial.png" />
-        </Head>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="icon" href="/img/copa-mundial.png" />
+      </Head>
+      <Grid container>
+        <Grid item xs={12}>
+          <PrincipalHeader />
+        </Grid>
+        <Grid item xs={12} justifyContent="center"></Grid>
+      </Grid>
+      <Grid container justifyContent="center">
+        <div className="bgContainer">
+          {/* <div className="prueba">{children}</div> */}
+          {children}
+        </div>
+      </Grid>
+      {/* <div className="principalContainer"> */}
+      {/* <header className="principalSection"></header> */}
 
-        {/* <header>
-            <Header userName = 'Jorge Burguera'/>
-        </header> */}
-
-        {/* <main>
+      {/* <main>
           </main> */}
-        {children}
 
-        {/* <footer>
+      {/* <footer>
             <Footer/>
         </footer> */}
-      </div>
+      {/* </div> */}
 
       <style jsx>{styles}</style>
-      <style jsx global>
-        {globalStyles}
-      </style>
+      <style jsx>{globalStyles}</style>
     </>
   )
 }
+export default MainLayout
 
 MainLayout.defaultProps = {
   title: "Quiniela Mundial",

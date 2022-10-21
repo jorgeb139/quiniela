@@ -1,8 +1,9 @@
 import { useRouter } from "next/router"
 
-export default function LoginRedirect(url) {
+export default function RoutesRedirect(url) {
+  console.log("Redirecciona")
   const router = useRouter()
   setTimeout(() => {
     router.push(url.url)
-  }, 5000)
+  }, 4000)
 }

@@ -6,8 +6,8 @@ import Button from "../components/Button"
 import GoogleLogo from "../components/Icons/Google"
 import FacebookLogo from "../components/Icons/Facebook"
 import TwitterLogo from "../components/Icons/Twitter"
-import LoginModal from "../components/LoginModal"
-import LoginRedirect from "../components/LoginRedirect"
+// import LoginModal from "../components/LoginModal"
+// import RoutesRedirect from "../components/RoutesRedirect"
 import {
   loginWithGoogle,
   loginWithFacebook,
@@ -94,11 +94,7 @@ export default function Home() {
                 <TwitterLogo height="24" width="24" />
                 Twitter
               </Button>
-              {/* <Button id="EmailButton">
-                <EmailLogo height="24" width="24" />
-                Email
-              </Button> */}
-              <LoginModal />
+              {/* <LoginModal /> */}
             </div>
           )}
           {user && (
@@ -110,7 +106,7 @@ export default function Home() {
                 Has iniciado sesión con el correo: <strong>{user.email}</strong>
               </p>
               <p>Redireccionando al panel principal, un momento por favor.</p>
-              <LoginRedirect url="/principal" />
+              {/* <LoginRedirect url="/principal" /> */}
             </div>
           )}
         </section>

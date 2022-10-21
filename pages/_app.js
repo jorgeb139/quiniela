@@ -1,25 +1,11 @@
 import "../styles/globals.css"
-// import { RecoilRoot } from "recoil"
-import { ChakraProvider, extendTheme } from "@chakra-ui/react"
+// import { colors } from "../styles/theme"
+// import { addOpacityToColor } from "../styles/utils"
 
 function MyApp({ Component, pageProps }) {
-  const theme = extendTheme({
-    styles: {
-      global: () => ({
-        body: {
-          bg: "",
-        },
-      }),
-    },
-  })
+  // const primaryOpacityColor = addOpacityToColor(colors.prymaryLight, 0.3)
 
-  return (
-    // <RecoilRoot>
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
-    // </RecoilRoot>
-  )
+  return <Component {...pageProps} />
 }
 
 export default MyApp

@@ -8,6 +8,25 @@ import {
   FacebookAuthProvider,
   TwitterAuthProvider,
 } from "firebase/auth"
+// import {
+//   getStorage,
+//   // ref,
+//   // uploadBytes,
+//   // getDownloadUrl,
+//   // getBytes,
+// } from "firebase/storage"
+import {
+  getFirestore,
+  collection,
+  // addDoc,
+  // getDocs,
+  doc,
+  getDoc,
+  // query,
+  // where,
+  setDoc,
+  // deleteDoc,
+} from "firebase/firestore"
 import { isMobile } from "react-device-detect"
 
 // Your web app's Firebase configuration
@@ -25,6 +44,8 @@ const firebaseConfig = {
 // Initialize Firebase
 // eslint-disable-next-line no-unused-vars
 const app = initializeApp(firebaseConfig)
+const db = getFirestore(app)
+// const storage = getStorage(app)
 
 // Construct user data oject from Firebase Auth user
 const getUserFromFirebaseAuth = (user) => {
@@ -43,9 +64,25 @@ const getUserFromFirebaseAuth = (user) => {
 // Check if the auth state is changed
 export const onAuthStateChange = (onChange) => {
   const auth = getAuth()
-  auth.onAuthStateChanged((user) => {
+  auth.onAuthStateChanged(async (user) => {
     if (user) {
-      onChange(getUserFromFirebaseAuth(user))
+      const userData = getUserFromFirebaseAuth(user)
+      onChange(userData)
+      const isRegistered = await userExists(user.email)
+      if (isRegistered) {
+        console.log("Registrado")
+      } else {
+        console.log("No se ha registrado")
+        await registerNewUser({
+          displayName: userData.displayName,
+          email: userData.email,
+          userMembership: "Free",
+          lastLogin: new Date(),
+          registerDate: new Date(),
+          loginCount: 1,
+          userValidate: false,
+        })
+      }
     } else {
       onChange(null)
     }
@@ -108,33 +145,28 @@ export const loginWithTwitter = async () => {
   signInWithPopup(auth, twitterProvider).catch((error) => {
     console.log(error.email)
   })
-  // Using signInWithPopup to sign in with Google on mobile
-  // return signInWithPopup(auth, twitterProvider).then((user) => {
-  //   try {
-  //     const { displayName, email } = user.user
-  //     return {
-  //       displayName,
-  //       email,
-  //     }
-  //   } catch (error) {
-  //     if (error.code === "auth/account-exists-with-different-credential") {
-  //       console.log("El error está acá")
-  //     }
-  //   }
-  // })
-  // return signInWithPopup(auth, twitterProvider)
+}
 
-  // .then(getUserFromFirebaseAuth)
+// Check if the user exists in the database
+export const userExists = async (email) => {
+  try {
+    const docRef = doc(db, "users", email)
+    const res = await getDoc(docRef)
+    return res.exists()
+  } catch (error) {
+    console.log(error)
+  }
+}
 
-  // .then((user) => {
-  //   const { displayName, email, photoURL, uid } = user.user;
-  //   return {
-  //     displayName,
-  //     email,
-  //     photoURL,
-  //     uid,
-  //   }
-  // })
+// Register new user
+export const registerNewUser = async (user) => {
+  try {
+    const collectionRef = collection(db, "users")
+    const docRef = doc(collectionRef, user.email)
+    await setDoc(docRef, user)
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 // Check if the user is logged in
