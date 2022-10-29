@@ -1,0 +1,234 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "homeTeam": "Brasil",
+      "homeTeamScore": 3,
+      "homeGoals": [
+        {
+          "id": 1,
+          "player": "Neymar Jr.",
+          "minute": "10"
+        },
+        {
+          "id": 2,
+          "player": "Neymar Jr.",
+          "minute": "42"
+        },
+        {
+          "id": 3,
+          "player": "Lucas Paquetá",
+          "minute": "73"
+        }
+      ],
+      "awayTeam": "Croacia",
+      "awayTeamScore": 0,
+      "awayGoals": [],
+      "date": "2018-06-18T18:00:00.000Z",
+      "status": "FINISHED"
+    },
+    {
+      "id": 2,
+      "homeTeam": "Argentina",
+      "homeTeamScore": 1,
+      "homeGoals": [
+        {
+          "id": 1,
+          "player": "Lionel Messi",
+          "minute": "89"
+        }
+      ],
+      "awayTeam": "Venezuela",
+      "awayTeamScore": 5,
+      "awayGoals": [
+        {
+          "id": 1,
+          "player": "Salomón Rondón",
+          "minute": "1"
+        },
+        {
+          "id": 2,
+          "player": "Salomón Rondón",
+          "minute": "2"
+        },
+        {
+          "id": 3,
+          "player": "Nathaly Varela",
+          "minute": "5"
+        },
+        {
+          "id": 4,
+          "player": "Raúl Febres",
+          "minute": "7"
+        },
+        {
+          "id": 5,
+          "player": "Jorge Burguera",
+          "minute": "13"
+        }
+      ],
+      "date": "2018-07-18T18:00:00.000Z",
+      "status": "FINISHED"
+    },
+    {
+      "id": 3,
+      "homeTeam": "Francia",
+      "homeTeamScore": 2,
+      "homeGoals": [
+        {
+          "id": 1,
+          "player": "Oliver Giroud",
+          "minute": "45"
+        },
+        {
+          "id": 2,
+          "player": "Theo Hernandez",
+          "minute": "82"
+        }
+      ],
+      "awayTeam": "Polonia",
+      "awayTeamScore": 2,
+      "awayGoals": [
+        {
+          "id": 1,
+          "player": "Robert Lewandowski",
+          "minute": "89"
+        },
+        {
+          "id": 2,
+          "player": "Robert Lewandowski",
+          "minute": "92"
+        }
+      ],
+      "date": "2018-08-18T18:00:00.000Z",
+      "status": "PLAYING"
+    },
+    {
+      "id": 4,
+      "homeTeam": "Portugal",
+      "homeTeamScore": 0,
+      "homeGoals": [],
+      "awayTeam": "España",
+      "awayTeamScore": 0,
+      "awayGoals": [],
+      "date": "2018-09-18T18:00:00.000Z",
+      "status": "NOT STARTED"
+    }
+  ],
+  "user": {
+    "userId": 1,
+    "title": "jorgeb139@gmail.com",
+    "body": "123"
+  },
+  "groups": [
+    {
+      "id": 1,
+      "group": "A",
+      "countries": [
+        {
+          "id": 1,
+          "country": "Qatar",
+          "gamesPlayed": "1",
+          "gamesWon": "1",
+          "gamesTied": "0",
+          "gamesLost": "0",
+          "goalsFavor": "3",
+          "goalsAgainst": "1",
+          "goalsDifference": "+2",
+          "points": "3"
+        },
+        {
+          "id": 2,
+          "country": "Ecuador",
+          "gamesPlayed": "1",
+          "gamesWon": "0",
+          "gamesTied": "1",
+          "gamesLost": "0",
+          "goalsFavor": "1",
+          "goalsAgainst": "1",
+          "goalsDifference": "0",
+          "points": "1"
+        },
+        {
+          "id": 3,
+          "country": "Senegal",
+          "gamesPlayed": "1",
+          "gamesWon": "0",
+          "gamesTied": "1",
+          "gamesLost": "0",
+          "goalsFavor": "1",
+          "goalsAgainst": "1",
+          "goalsDifference": "0",
+          "points": "1"
+        },
+        {
+          "id": 4,
+          "country": "Paises Bajos",
+          "gamesPlayed": "1",
+          "gamesWon": "0",
+          "gamesTied": "0",
+          "gamesLost": "1",
+          "goalsFavor": "1",
+          "goalsAgainst": "3",
+          "goalsDifference": "-2",
+          "points": "0"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "group": "B",
+      "countries": [
+        {
+          "id": 1,
+          "country": "Inglaterra",
+          "gamesPlayed": "1",
+          "gamesWon": "1",
+          "gamesTied": "0",
+          "gamesLost": "0",
+          "goalsFavor": "3",
+          "goalsAgainst": "1",
+          "goalsDifference": "+2",
+          "points": "3"
+        },
+        {
+          "id": 2,
+          "country": "Iran",
+          "gamesPlayed": "1",
+          "gamesWon": "0",
+          "gamesTied": "1",
+          "gamesLost": "0",
+          "goalsFavor": "1",
+          "goalsAgainst": "1",
+          "goalsDifference": "0",
+          "points": "1"
+        },
+        {
+          "id": 3,
+          "country": "Estados Unidos",
+          "gamesPlayed": "1",
+          "gamesWon": "0",
+          "gamesTied": "1",
+          "gamesLost": "0",
+          "goalsFavor": "1",
+          "goalsAgainst": "1",
+          "goalsDifference": "0",
+          "points": "1"
+        },
+        {
+          "id": 4,
+          "country": "Gales",
+          "gamesPlayed": "1",
+          "gamesWon": "0",
+          "gamesTied": "0",
+          "gamesLost": "1",
+          "goalsFavor": "1",
+          "goalsAgainst": "3",
+          "goalsDifference": "-2",
+          "points": "0"
+        }
+      ]
+    }
+  ]
+}
+

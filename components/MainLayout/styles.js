@@ -4,12 +4,12 @@ import { colors, fonts } from "../../styles/theme"
 export const globalStyles = css.global`
   html,
   body {
-    /* background: linear-gradient(
+    background: linear-gradient(
       112deg,
       rgba(170, 34, 77, 1) 0%,
       rgba(43, 21, 32, 1) 100%
-    ); */
-    background-image: url("/img/bg_main.jpg");
+    );
+    /* background-image: url("/img/bg_main.jpg"); */
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 100%;
@@ -52,18 +52,11 @@ export const globalStyles = css.global`
     display: grid;
     min-height: 86vh;
     height: 100%;
-    width: 80%;
     max-width: 1280px;
   }
 
   .prueba {
-    border-radius: 20px;
-    justify-self: center;
-    top: 0;
-    background: white;
-    opacity: 0.3;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    width: 60vw;
+    max-width: 1200px;
   }
 `
 
