@@ -1,80 +1,3 @@
-// import {
-//   Accordion,
-//   AccordionDetails,
-//   AccordionSummary,
-//   Typography,
-// } from "@mui/material"
-// import { useState } from "react"
-
-// export default function Groups(response) {
-//   const [expanded, setExpanded] = useState(false)
-
-//   const handleChange = (panel) => (event, newExpanded) => {
-//     setExpanded(newExpanded ? panel : false)
-//   }
-
-//   console.log(response)
-//   return (
-//     <div>
-//       {response.map(({ id, group, countries }) => (
-//         <div key={id}>
-//           <h2>{group}</h2>
-//           {countries.map(
-//             ({
-//               id,
-//               country,
-//               gamesPlayed,
-//               gamesWon,
-//               gamesTied,
-//               gamesLost,
-//               goalsFavor,
-//               goalsAgainst,
-//               goalsDifference,
-//               points,
-//             }) => (
-//               <div key={id}>
-//                 <p>País: {country}</p>
-//                 <p>Partidos jugados: {gamesPlayed}</p>
-//                 <p>Partidos ganados: {gamesWon}</p>
-//                 <p>Partidos empatados: {gamesTied}</p>
-//                 <p>Partidos perdidos: {gamesLost}</p>
-//                 <p>Goles a favor: {goalsFavor}</p>
-//                 <p>Goles en contra: {goalsAgainst}</p>
-//                 <p>Diferencia de goles: {goalsDifference}</p>
-//                 <p>Puntos: {points}</p>
-//               </div>
-//             )
-//           )}
-//         </div>
-//       ))}
-
-//       <Accordion
-//         expanded={expanded === "panel1"}
-//         onChange={handleChange("panel1")}
-//       >
-//         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-//           <Typography>Collapsible Group Item #1</Typography>
-//         </AccordionSummary>
-//         <AccordionDetails>
-//           <Typography>
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-//             malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
-//             dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
-//             lacus ex, sit amet blandit leo lobortis eget.
-//           </Typography>
-//         </AccordionDetails>
-//       </Accordion>
-//     </div>
-//   )
-// }
-
-// Groups.getInitialProps = async () => {
-//   return fetch("https://my-json-server.typicode.com/jorgeb139/lab_arch/groups")
-//     .then((res) => res.json())
-//     .then((response) => {
-//       return { response }
-//     })
-// }
 import {
   Accordion,
   AccordionDetails,
@@ -90,35 +13,37 @@ import {
 import axios from "axios"
 import { useState, useEffect } from "react"
 
-export default function Groups({ response }) {
+export default function Groups({ setGroupMatches }) {
   const baseURL =
     "https://my-json-server.typicode.com/jorgeb139/lab_arch/groups"
 
   const [groups, setGroups] = useState([])
-  const [expanded, setExpanded] = useState(false)
+  const [expanded, setExpanded] = useState("panel1")
 
-  const handleChange = (panel) => (event, newExpanded) => {
-    setExpanded(newExpanded ? panel : false)
+  const handleChange = (id) => (event, newExpanded) => {
+    setExpanded(newExpanded ? `panel${id}` : false)
+    setGroupMatches(id)
   }
 
   useEffect(() => {
     ;(async () => {
       const data = await axios.get(baseURL)
-      console.log("Grupos: ", data.data)
       setGroups(data.data)
     })()
   }, [])
 
   return (
     <div>
-      <h1>Calendario:</h1>
       {groups?.map(({ id, countries, group }) => (
         <Accordion
           expanded={expanded === `panel${id}`}
-          onChange={handleChange(`panel${id}`)}
+          onChange={handleChange(id)}
           key={id}
         >
-          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+          <AccordionSummary
+            aria-controls={`panel${id}d-content`}
+            id={`panel${id}`}
+          >
             <Typography color={"black"}>Grupo {group}</Typography>
           </AccordionSummary>
           <AccordionDetails>
