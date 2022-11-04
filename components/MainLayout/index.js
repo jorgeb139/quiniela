@@ -18,7 +18,13 @@ const MainLayout = ({ children, title, description }) => {
         </Grid>
         <Grid item xs={12} justifyContent="center"></Grid>
       </Grid>
-      <Grid container justifyContent="center" margin="20px">
+      <Grid
+        container
+        justifyContent="center"
+        sx={{
+          margin: { xs: "50px 5vh", md: "50px 10vh" },
+        }}
+      >
         {/* <div className="bgContainer"> */}
         {/* <div className="prueba">{children}</div> */}
         {children}

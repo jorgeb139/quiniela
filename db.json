@@ -237,7 +237,11 @@
       "matches": [
         {
           "id": 1,
-          "date": "20/11/2022",
+          "date":
+            {
+              "day":"20",
+              "month":"NOV"
+            },
           "home": "Qatar",
           "homeflag": "band",
           "away": "Ecuador",
@@ -246,7 +250,11 @@
         },
         {
           "id": 2,
-          "date": "21/11/2022",
+          "date":
+            {
+              "day":"21",
+              "month":"NOV"
+            },
           "home": "Senegal",
           "homeflag": "band",
           "away": "Paises Bajos",
@@ -255,7 +263,11 @@
         },
         {
           "id": 3,
-          "date": "25/11/2022",
+          "date":
+            {
+              "day":"25",
+              "month":"NOV"
+            },
           "home": "Qatar",
           "homeflag": "band",
           "away": "Senegal",
@@ -264,7 +276,11 @@
         }, 
         {
           "id": 4,
-          "date": "25/11/2022",
+          "date":
+            {
+              "day":"25",
+              "month":"NOV"
+            },
           "home": "Paises Bajos",
           "homeflag": "band",
           "away": "Ecuador",
@@ -273,7 +289,11 @@
         },
         {
           "id": 5,
-          "date": "29/11/2022",
+          "date":
+            {
+              "day":"29",
+              "month":"NOV"
+            },
           "home": "Ecuador",
           "homeflag": "band",
           "away": "Senegal",
@@ -282,7 +302,11 @@
         }, 
         {
           "id": 6,
-          "date": "29/11/2022",
+          "date":
+            {
+              "day":"29",
+              "month":"NOV"
+            },
           "home": "Paises Bajos",
           "homeflag": "band",
           "away": "Qatar",
@@ -297,7 +321,11 @@
       "matches": [
         {
           "id": 1,
-          "date": "21/11/2022",
+          "date":
+            {
+              "day":"21",
+              "month":"NOV"
+            },
           "home": "Inglaterra",
           "homeflag": "band",
           "away": "Iran",
@@ -306,7 +334,11 @@
         },
         {
           "id": 2,
-          "date": "21/11/2022",
+          "date":
+            {
+              "day":"21",
+              "month":"NOV"
+            },
           "home": "Estados Unidos",
           "homeflag": "band",
           "away": "Gales",
@@ -315,7 +347,11 @@
         },
         {
           "id": 3,
-          "date": "25/11/2022",
+          "date":
+            {
+              "day":"25",
+              "month":"NOV"
+            },
           "home": "Gales",
           "homeflag": "band",
           "away": "Iran",
@@ -324,7 +360,11 @@
         }, 
         {
           "id": 4,
-          "date": "25/11/2022",
+          "date":
+            {
+              "day":"25",
+              "month":"NOV"
+            },
           "home": "Inglaterra",
           "homeflag": "band",
           "away": "Estados Unidos",
@@ -333,7 +373,11 @@
         },
         {
           "id": 5,
-          "date": "29/11/2022",
+          "date":
+            {
+              "day":"29",
+              "month":"NOV"
+            },
           "home": "Iran",
           "homeflag": "band",
           "away": "Estados Unidos",
@@ -342,7 +386,11 @@
         }, 
         {
           "id": 6,
-          "date": "29/11/2022",
+          "date":
+            {
+              "day":"29",
+              "month":"NOV"
+            },
           "home": "Gales",
           "homeflag": "band",
           "away": "Inglaterra",

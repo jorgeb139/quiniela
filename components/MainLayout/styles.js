@@ -4,12 +4,13 @@ import { colors, fonts } from "../../styles/theme"
 export const globalStyles = css.global`
   html,
   body {
-    background: linear-gradient(
+    /* background: linear-gradient(
       112deg,
       rgba(170, 34, 77, 1) 0%,
       rgba(43, 21, 32, 1) 100%
-    );
-    /* background-image: url("/img/bg_main.jpg"); */
+    ); */
+    background-image: url("/img/bg_main.jpg");
+    /* background: ${colors.white}; */
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 100%;
@@ -57,6 +58,10 @@ export const globalStyles = css.global`
 
   .prueba {
     max-width: 1200px;
+  }
+
+  .calendarTable tbody tr td {
+    padding: 12px 16px !important;
   }
 `
 

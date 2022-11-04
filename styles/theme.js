@@ -8,11 +8,15 @@ export const fonts = {
 
 export const colors = {
   primary: "#56042C",
-  prymaryLight: "#AA224D",
-  prymaryDark: "#2B1520",
+  primaryLight: "#AA224D",
+  primaryDark: "#2B1520",
   deepBlue: "#1077C3",
   lightBlue: "#49BCE3",
-  yellow: "FEC310",
+  yellow: "#FEC310",
   black: "#171717",
   white: "#e6e6e6",
+  primaryTable: "#f5f5f5",
+  secondaryTable: "#e8e8e8",
+  primaryAccordion: "#480626",
+  secondaryAccordion: "#621b34",
 }

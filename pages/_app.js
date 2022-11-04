@@ -3,7 +3,7 @@ import "../styles/globals.css"
 // import { addOpacityToColor } from "../styles/utils"
 
 function MyApp({ Component, pageProps }) {
-  // const primaryOpacityColor = addOpacityToColor(colors.prymaryLight, 0.3)
+  // const primaryOpacityColor = addOpacityToColor(colors.primaryLight, 0.3)
 
   return <Component {...pageProps} />
 }
