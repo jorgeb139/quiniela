@@ -27,7 +27,7 @@
 //   const fetchUrl =
 //     method === "POST"
 //       ? "https://jsonplaceholder.typicode.com/posts"
-//       : "https://my-json-server.typicode.com/jorgeb139/lab_arch/user"
+//       : "https://my-json-server.typicode.com/jorgeb139/lab_arch/users"
 //   const textButton = method === "POST" ? "Registrarme" : "Iniciar sesión"
 
 //   const postData = async (form) => {

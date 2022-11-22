@@ -6,7 +6,7 @@ import Calendar from "./Calendar"
 import Groups from "./Groups"
 import styles from "./styles"
 
-export default function Calendario(response) {
+export default function Calendario() {
   const [groupMatches, setGroupMatches] = useState("1")
 
   return (

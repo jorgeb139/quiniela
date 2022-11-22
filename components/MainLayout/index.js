@@ -1,10 +1,25 @@
 import styles, { globalStyles } from "./styles"
+import { useEffect } from "react"
+import { useRouter } from "next/router"
 
 import Head from "next/head"
 import PrincipalHeader from "../Header/PrincipalHeader"
 import Grid from "@mui/material/Unstable_Grid2"
+import ScrollToTopButton from "../ScrollToTopButton"
 
-const MainLayout = ({ children, title, description }) => {
+const MainLayout = ({ children, title, description, page = "" }) => {
+  const router = useRouter()
+
+  // Only the index page has a different bg
+  useEffect(() => {
+    if (router.asPath === "/") {
+      document.querySelector("body").style.background =
+        "linear-gradient(112deg, rgba(170, 34, 77, 1) 0%, rgba(43, 21, 32, 1) 100%)"
+    } else {
+      document.querySelector("body").style.background = ""
+    }
+  }, [])
+
   return (
     <>
       <Head>
@@ -30,6 +45,7 @@ const MainLayout = ({ children, title, description }) => {
         {children}
         {/* </div> */}
       </Grid>
+      <ScrollToTopButton />
       {/* <div className="principalContainer"> */}
       {/* <header className="principalSection"></header> */}
 

@@ -4,7 +4,6 @@ import "../styles/globals.css"
 
 function MyApp({ Component, pageProps }) {
   // const primaryOpacityColor = addOpacityToColor(colors.primaryLight, 0.3)
-
   return <Component {...pageProps} />
 }
 

@@ -1,0 +1,833 @@
+{
+  "results": [
+    {
+      "userId": 1,
+      "pronostics": [
+        {
+          "id": 1,
+          "group": "A",
+          "matches": [
+            {
+              "id": 1,
+              "date":
+                {
+                  "day":"20",
+                  "month":"NOV"
+                },
+              "home": "Qatar",
+              "homeflag": "band",
+              "homeScore": 3,
+              "homePredicted": 3,
+              "away": "Ecuador",
+              "awayflag": "band",
+              "awayScore": 1,
+              "awayPredicted": 1,
+              "time": "13:00",
+              "points": 5,
+              "status": "FINISHED"
+            },
+            {
+              "id": 2,
+              "date":
+                {
+                  "day":"21",
+                  "month":"NOV"
+                },
+              "home": "Senegal",
+              "homeflag": "band",
+              "homeScore": 3,
+              "homePredicted": 2,
+              "away": "Paises Bajos",
+              "awayflag": "band",
+              "awayScore": 1,
+              "awayPredicted": 0,
+              "time": "13:00",
+              "points": 0,
+              "status": "PLAYING"
+            },
+            {
+              "id": 3,
+              "date":
+                {
+                  "day":"25",
+                  "month":"NOV"
+                },
+              "home": "Qatar",
+              "homeflag": "band",
+              "homeScore": 1,
+              "homePredicted": 1,
+              "away": "Senegal",
+              "awayflag": "band",
+              "awayScore": 1,
+              "awayPredicted": 1,
+              "time": "10:00",
+              "points": 0,
+              "status": "PLAYING"
+            }, 
+            {
+              "id": 4,
+              "date":
+                {
+                  "day":"25",
+                  "month":"NOV"
+                },
+              "home": "Paises Bajos",
+              "homeflag": "band",
+              "homeScore": 1,
+              "homePredicted": 1,
+              "away": "Ecuador",
+              "awayflag": "band",
+              "awayScore": 1,
+              "awayPredicted": 1,
+              "time": "13:00",
+              "points": 0,
+              "status": "PLAYING"
+            },
+            {
+              "id": 5,
+              "date":
+                {
+                  "day":"29",
+                  "month":"NOV"
+                },
+              "home": "Ecuador",
+              "homeflag": "band",
+              "homeScore": 1,
+              "homePredicted": 1,
+              "away": "Senegal",
+              "awayflag": "band",
+              "awayScore": 1,
+              "awayPredicted": 1,
+              "time": "12:00",
+              "points": 0,
+              "status": "PLAYING"
+            }, 
+            {
+              "id": 6,
+              "date":
+                {
+                  "day":"29",
+                  "month":"NOV"
+                },
+              "home": "Paises Bajos",
+              "homeflag": "band",
+              "homeScore": 0,
+              "homePredicted": 0,
+              "away": "Qatar",
+              "awayflag": "band",
+              "awayScore": 0,
+              "awayPredicted": 0,
+              "time": "12:00",
+              "points": 0,
+              "status": "NOT STARTED"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "group": "B",
+          "matches": [
+            {
+              "id": 1,
+              "date":
+                {
+                  "day":"21",
+                  "month":"NOV"
+                },
+              "home": "Inglaterra",
+              "homeflag": "band",
+              "homeScore": 0,
+              "homePredicted": 0,
+              "away": "Iran",
+              "awayflag": "band",
+              "awayScore": 0,
+              "awayPredicted": 0,
+              "time": "10:00",
+              "points": 0,
+              "status": "NOT STARTED"
+            },
+            {
+              "id": 2,
+              "date":
+                {
+                  "day":"21",
+                  "month":"NOV"
+                },
+              "home": "Estados Unidos",
+              "homeflag": "band",
+              "homeScore": 0,
+              "homePredicted": 0,
+              "away": "Gales",
+              "awayflag": "band",
+              "awayScore": 0,
+              "awayPredicted": 0,
+              "time": "16:00",
+              "points": 0,
+              "status": "NOT STARTED"
+            },
+            {
+              "id": 3,
+              "date":
+                {
+                  "day":"25",
+                  "month":"NOV"
+                },
+              "home": "Gales",
+              "homeflag": "band",
+              "homeScore": 0,
+              "homePredicted": 0,
+              "away": "Iran",
+              "awayflag": "band",
+              "awayScore": 0,
+              "awayPredicted": 0,
+              "time": "07:00",
+              "points": 0,
+              "status": "NOT STARTED"
+            }, 
+            {
+              "id": 4,
+              "date":
+                {
+                  "day":"25",
+                  "month":"NOV"
+                },
+              "home": "Inglaterra",
+              "homeflag": "band",
+              "homeScore": 0,
+              "homePredicted": 0,
+              "away": "Estados Unidos",
+              "awayflag": "band",
+              "awayScore": 0,
+              "awayPredicted": 0,
+              "time": "16:00",
+              "points": 0,
+              "status": "NOT STARTED"
+            },
+            {
+              "id": 5,
+              "date":
+                {
+                  "day":"29",
+                  "month":"NOV"
+                },
+              "home": "Iran",
+              "homeflag": "band",
+              "homeScore": 0,
+              "homePredicted": 0,
+              "away": "Estados Unidos",
+              "awayflag": "band",
+              "awayScore": 0,
+              "awayPredicted": 0,
+              "time": "16:00",
+              "points": 0,
+              "status": "NOT STARTED"
+            }, 
+            {
+              "id": 6,
+              "date":
+                {
+                  "day":"29",
+                  "month":"NOV"
+                },
+              "home": "Gales",
+              "homeflag": "band",
+              "homeScore": 0,
+              "homePredicted": 0,
+              "away": "Inglaterra",
+              "awayflag": "band",
+              "awayScore": 0,
+              "awayPredicted": 0,
+              "time": "16:00",
+              "points": 0,
+              "status": "NOT STARTED"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "userId": 2,
+      "pronostics": [
+        {
+          "id": 1,
+          "group": "A",
+          "matches": [
+            {
+              "id": 1,
+              "date":
+                {
+                  "day":"20",
+                  "month":"NOV"
+                },
+              "home": "Qatar",
+              "homeflag": "band",
+              "homeScore": 3,
+              "homePredicted": 3,
+              "away": "Ecuador",
+              "awayflag": "band",
+              "awayScore": 1,
+              "awayPredicted": 3,
+              "time": "13:00",
+              "points": 0,
+              "status": "FINISHED"
+            },
+            {
+              "id": 2,
+              "date":
+                {
+                  "day":"21",
+                  "month":"NOV"
+                },
+              "home": "Senegal",
+              "homeflag": "band",
+              "homeScore": 3,
+              "homePredicted": 3,
+              "away": "Paises Bajos",
+              "awayflag": "band",
+              "awayScore": 1,
+              "awayPredicted": 3,
+              "time": "13:00",
+              "points": 0,
+              "status": "PLAYING"
+            },
+            {
+              "id": 3,
+              "date":
+                {
+                  "day":"25",
+                  "month":"NOV"
+                },
+              "home": "Qatar",
+              "homeflag": "band",
+              "homeScore": 1,
+              "homePredicted": 1,
+              "away": "Senegal",
+              "awayflag": "band",
+              "awayScore": 1,
+              "awayPredicted": 1,
+              "time": "10:00",
+              "points": 0,
+              "status": "PLAYING"
+            }, 
+            {
+              "id": 4,
+              "date":
+                {
+                  "day":"25",
+                  "month":"NOV"
+                },
+              "home": "Paises Bajos",
+              "homeflag": "band",
+              "homeScore": 1,
+              "homePredicted": 1,
+              "away": "Ecuador",
+              "awayflag": "band",
+              "awayScore": 1,
+              "awayPredicted": 1,
+              "time": "13:00",
+              "points": 0,
+              "status": "PLAYING"
+            },
+            {
+              "id": 5,
+              "date":
+                {
+                  "day":"29",
+                  "month":"NOV"
+                },
+              "home": "Ecuador",
+              "homeflag": "band",
+              "homeScore": 1,
+              "homePredicted": 1,
+              "away": "Senegal",
+              "awayflag": "band",
+              "awayScore": 1,
+              "awayPredicted": 1,
+              "time": "12:00",
+              "points": 0,
+              "status": "PLAYING"
+            }, 
+            {
+              "id": 6,
+              "date":
+                {
+                  "day":"29",
+                  "month":"NOV"
+                },
+              "home": "Paises Bajos",
+              "homeflag": "band",
+              "homeScore": 0,
+              "homePredicted": 0,
+              "away": "Qatar",
+              "awayflag": "band",
+              "awayScore": 0,
+              "awayPredicted": 0,
+              "time": "12:00",
+              "points": 0,
+              "status": "NOT STARTED"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "group": "B",
+          "matches": [
+            {
+              "id": 1,
+              "date":
+                {
+                  "day":"21",
+                  "month":"NOV"
+                },
+              "home": "Inglaterra",
+              "homeflag": "band",
+              "homeScore": 0,
+              "homePredicted": 0,
+              "away": "Iran",
+              "awayflag": "band",
+              "awayScore": 0,
+              "awayPredicted": 0,
+              "time": "10:00",
+              "points": 0,
+              "status": "NOT STARTED"
+            },
+            {
+              "id": 2,
+              "date":
+                {
+                  "day":"21",
+                  "month":"NOV"
+                },
+              "home": "Estados Unidos",
+              "homeflag": "band",
+              "homeScore": 0,
+              "homePredicted": 0,
+              "away": "Gales",
+              "awayflag": "band",
+              "awayScore": 0,
+              "awayPredicted": 0,
+              "time": "16:00",
+              "points": 0,
+              "status": "NOT STARTED"
+            },
+            {
+              "id": 3,
+              "date":
+                {
+                  "day":"25",
+                  "month":"NOV"
+                },
+              "home": "Gales",
+              "homeflag": "band",
+              "homeScore": 0,
+              "homePredicted": 0,
+              "away": "Iran",
+              "awayflag": "band",
+              "awayScore": 0,
+              "awayPredicted": 0,
+              "time": "07:00",
+              "points": 0,
+              "status": "NOT STARTED"
+            }, 
+            {
+              "id": 4,
+              "date":
+                {
+                  "day":"25",
+                  "month":"NOV"
+                },
+              "home": "Inglaterra",
+              "homeflag": "band",
+              "homeScore": 0,
+              "homePredicted": 0,
+              "away": "Estados Unidos",
+              "awayflag": "band",
+              "awayScore": 0,
+              "awayPredicted": 0,
+              "time": "16:00",
+              "points": 0,
+              "status": "NOT STARTED"
+            },
+            {
+              "id": 5,
+              "date":
+                {
+                  "day":"29",
+                  "month":"NOV"
+                },
+              "home": "Iran",
+              "homeflag": "band",
+              "homeScore": 0,
+              "homePredicted": 0,
+              "away": "Estados Unidos",
+              "awayflag": "band",
+              "awayScore": 0,
+              "awayPredicted": 0,
+              "time": "16:00",
+              "points": 0,
+              "status": "NOT STARTED"
+            }, 
+            {
+              "id": 6,
+              "date":
+                {
+                  "day":"29",
+                  "month":"NOV"
+                },
+              "home": "Gales",
+              "homeflag": "band",
+              "homeScore": 0,
+              "homePredicted": 0,
+              "away": "Inglaterra",
+              "awayflag": "band",
+              "awayScore": 0,
+              "awayPredicted": 0,
+              "time": "16:00",
+              "points": 0,
+              "status": "NOT STARTED"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "userId": 1,
+      "displayName": "Jorge Burguera",
+      "email": "jorgeb139@gmail.com",
+      "lastLogin": "28 de septiembre de 2022, 19:12:07 UTC-3",
+      "loginCount": 1,
+      "registerDate": "28 de septiembre de 2022, 19:12:07 UTC-3",
+      "userMembership": "Free",
+      "userValidate": false
+    },
+    {
+      "userId": 2,
+      "displayName": "Raúl Febres",
+      "email": "rfebrescorderor@gmail.com",
+      "lastLogin": "28 de septiembre de 2022, 19:12:07 UTC-3",
+      "loginCount": 5,
+      "registerDate": "28 de octubre de 2022, 19:12:07 UTC-3",
+      "userMembership": "Paid",
+      "userValidate": true
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "group": "A",
+      "countries": [
+        {
+          "id": 1,
+          "country": "Qatar",
+          "gamesPlayed": "1",
+          "gamesWon": "1",
+          "gamesTied": "0",
+          "gamesLost": "0",
+          "goalsFavor": "3",
+          "goalsAgainst": "1",
+          "goalsDifference": "+2",
+          "points": "3"
+        },
+        {
+          "id": 2,
+          "country": "Ecuador",
+          "gamesPlayed": "1",
+          "gamesWon": "0",
+          "gamesTied": "1",
+          "gamesLost": "0",
+          "goalsFavor": "1",
+          "goalsAgainst": "1",
+          "goalsDifference": "0",
+          "points": "1"
+        },
+        {
+          "id": 3,
+          "country": "Senegal",
+          "gamesPlayed": "1",
+          "gamesWon": "0",
+          "gamesTied": "1",
+          "gamesLost": "0",
+          "goalsFavor": "1",
+          "goalsAgainst": "1",
+          "goalsDifference": "0",
+          "points": "1"
+        },
+        {
+          "id": 4,
+          "country": "Paises Bajos",
+          "gamesPlayed": "1",
+          "gamesWon": "0",
+          "gamesTied": "0",
+          "gamesLost": "1",
+          "goalsFavor": "1",
+          "goalsAgainst": "3",
+          "goalsDifference": "-2",
+          "points": "0"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "group": "B",
+      "countries": [
+        {
+          "id": 1,
+          "country": "Inglaterra",
+          "gamesPlayed": "1",
+          "gamesWon": "1",
+          "gamesTied": "0",
+          "gamesLost": "0",
+          "goalsFavor": "3",
+          "goalsAgainst": "1",
+          "goalsDifference": "+2",
+          "points": "3"
+        },
+        {
+          "id": 2,
+          "country": "Iran",
+          "gamesPlayed": "1",
+          "gamesWon": "0",
+          "gamesTied": "1",
+          "gamesLost": "0",
+          "goalsFavor": "1",
+          "goalsAgainst": "1",
+          "goalsDifference": "0",
+          "points": "1"
+        },
+        {
+          "id": 3,
+          "country": "Estados Unidos",
+          "gamesPlayed": "1",
+          "gamesWon": "0",
+          "gamesTied": "1",
+          "gamesLost": "0",
+          "goalsFavor": "1",
+          "goalsAgainst": "1",
+          "goalsDifference": "0",
+          "points": "1"
+        },
+        {
+          "id": 4,
+          "country": "Gales",
+          "gamesPlayed": "1",
+          "gamesWon": "0",
+          "gamesTied": "0",
+          "gamesLost": "1",
+          "goalsFavor": "1",
+          "goalsAgainst": "3",
+          "goalsDifference": "-2",
+          "points": "0"
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": 1,
+      "group": "A",
+      "matches": [
+        {
+          "id": 1,
+          "date":
+            {
+              "day":"20",
+              "month":"NOV"
+            },
+          "home": "Qatar",
+          "homeflag": "band",
+          "homeScore": 3,
+          "away": "Ecuador",
+          "awayflag": "band",
+          "awayScore": 1,
+          "time": "13:00",
+          "status": "FINISHED"
+        },
+        {
+          "id": 2,
+          "date":
+            {
+              "day":"21",
+              "month":"NOV"
+            },
+          "home": "Senegal",
+          "homeflag": "band",
+          "homeScore": 3,
+          "away": "Paises Bajos",
+          "awayflag": "band",
+          "awayScore": 1,
+          "time": "13:00",
+          "status": "PLAYING"
+        },
+        {
+          "id": 3,
+          "date":
+            {
+              "day":"25",
+              "month":"NOV"
+            },
+          "home": "Qatar",
+          "homeflag": "band",
+          "homeScore": 1,
+          "away": "Senegal",
+          "awayflag": "band",
+          "awayScore": 1,
+          "time": "10:00",
+          "status": "PLAYING"
+        }, 
+        {
+          "id": 4,
+          "date":
+            {
+              "day":"25",
+              "month":"NOV"
+            },
+          "home": "Paises Bajos",
+          "homeflag": "band",
+          "homeScore": 1,
+          "away": "Ecuador",
+          "awayflag": "band",
+          "awayScore": 1,
+          "time": "13:00",
+          "status": "PLAYING"
+        },
+        {
+          "id": 5,
+          "date":
+            {
+              "day":"29",
+              "month":"NOV"
+            },
+          "home": "Ecuador",
+          "homeflag": "band",
+          "homeScore": 1,
+          "away": "Senegal",
+          "awayflag": "band",
+          "awayScore": 1,
+          "time": "12:00",
+          "status": "PLAYING"
+        }, 
+        {
+          "id": 6,
+          "date":
+            {
+              "day":"29",
+              "month":"NOV"
+            },
+          "home": "Paises Bajos",
+          "homeflag": "band",
+          "homeScore": 0,
+          "away": "Qatar",
+          "awayflag": "band",
+          "awayScore": 0,
+          "time": "12:00",
+          "status": "NOT STARTED"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "group": "B",
+      "matches": [
+        {
+          "id": 1,
+          "date":
+            {
+              "day":"21",
+              "month":"NOV"
+            },
+          "home": "Inglaterra",
+          "homeflag": "band",
+          "homeScore": 0,
+          "away": "Iran",
+          "awayflag": "band",
+          "awayScore": 0,
+          "time": "10:00",
+          "status": "NOT STARTED"
+        },
+        {
+          "id": 2,
+          "date":
+            {
+              "day":"21",
+              "month":"NOV"
+            },
+          "home": "Estados Unidos",
+          "homeflag": "band",
+          "homeScore": 0,
+          "away": "Gales",
+          "awayflag": "band",
+          "awayScore": 0,
+          "time": "16:00",
+          "status": "NOT STARTED"
+        },
+        {
+          "id": 3,
+          "date":
+            {
+              "day":"25",
+              "month":"NOV"
+            },
+          "home": "Gales",
+          "homeflag": "band",
+          "homeScore": 0,
+          "away": "Iran",
+          "awayflag": "band",
+          "awayScore": 0,
+          "time": "07:00",
+          "status": "NOT STARTED"
+        }, 
+        {
+          "id": 4,
+          "date":
+            {
+              "day":"25",
+              "month":"NOV"
+            },
+          "home": "Inglaterra",
+          "homeflag": "band",
+          "homeScore": 0,
+          "away": "Estados Unidos",
+          "awayflag": "band",
+          "awayScore": 0,
+          "time": "16:00",
+          "status": "NOT STARTED"
+        },
+        {
+          "id": 5,
+          "date":
+            {
+              "day":"29",
+              "month":"NOV"
+            },
+          "home": "Iran",
+          "homeflag": "band",
+          "homeScore": 0,
+          "away": "Estados Unidos",
+          "awayflag": "band",
+          "awayScore": 0,
+          "time": "16:00",
+          "status": "NOT STARTED"
+        }, 
+        {
+          "id": 6,
+          "date":
+            {
+              "day":"29",
+              "month":"NOV"
+            },
+          "home": "Gales",
+          "homeflag": "band",
+          "homeScore": 0,
+          "away": "Inglaterra",
+          "awayflag": "band",
+          "awayScore": 0,
+          "time": "16:00",
+          "status": "NOT STARTED"
+        }
+      ]
+    }
+  ]
+}
+

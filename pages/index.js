@@ -50,6 +50,7 @@ export default function Home() {
       <MainLayout
         title="Quiniela Mundial"
         description="Encontrarás todas las opciones para disfrutar tu quiniela"
+        page="index"
       >
         <section>
           <div

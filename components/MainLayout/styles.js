@@ -2,15 +2,7 @@ import css from "styled-jsx/css"
 import { colors, fonts } from "../../styles/theme"
 
 export const globalStyles = css.global`
-  html,
   body {
-    /* background: linear-gradient(
-      112deg,
-      rgba(170, 34, 77, 1) 0%,
-      rgba(43, 21, 32, 1) 100%
-    ); */
-    background-image: url("/img/bg_main.jpg");
-    /* background: ${colors.white}; */
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 100%;
@@ -18,7 +10,7 @@ export const globalStyles = css.global`
     padding-bottom: 10px;
     margin: 0;
     font-family: ${fonts.base};
-    /* overflow: hidden; */
+    background-image: url("/img/bg_main.jpg");
   }
 
   p {
