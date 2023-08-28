@@ -1,0 +1,25 @@
+@import '../../utils/constants/globalStyles';
+
+.button {
+  align-items: center;
+  background: rgba($white, 0.8);
+  border: none;
+  cursor: pointer;
+  color: $black;
+  display: flex;
+  border-radius: 9999px;
+  font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  padding: 10px 72px;
+  transition: opacity 0.3s ease, background 0.3s ease;
+  margin-top: 16px;
+  width: 250px;
+
+  &:hover {
+    background: $white;
+  }
+
+  svg {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../utils/constants/globalStyles';
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  font-size: $footer-font-size;
+  color: $dark-text-color;
+  font-weight: $footer-font-weight;
+}
+
+a {
+  color: $href-basic-color;
+  text-decoration: $href-text-decoration;
+  transition: color 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $href-basic-hover-color;
+    text-decoration: $href-hover-text-decoration;
+  }
+}
